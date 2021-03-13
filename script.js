@@ -67,3 +67,23 @@ const swiper2= new Swiper('.swiper2', {
         }
     }
 })
+
+
+/// Scroll up
+
+const scrollUp = document.getElementById("scroll-up");
+
+
+let t;
+function up() {
+	let top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+	if(top > 0) {
+		window.scrollBy(0,-150);
+		t = setTimeout('up()',20);
+	} else clearTimeout(t);
+	return false;
+}
+
+window.addEventListener('scroll', ()=>{
+    scrollUp.hidden = (pageYOffset < document.documentElement.clientHeight);
+});
