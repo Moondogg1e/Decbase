@@ -102,20 +102,9 @@ nav {
 
 
 
-.nav-active {
-  transform: translateX(0%);
-}
 
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
+
+
 
 /* Modern Interior */
 
@@ -481,7 +470,7 @@ nav {
   max-width: 590px;
   height: auto;
   width: 100%;
-  
+  padding: 0 4%;
 }
 
 .news-img{
@@ -489,6 +478,7 @@ nav {
   width: 100%;
   max-width: 553px;
   margin-bottom: -2%;
+  padding: 0 5%;
   /* height: auto; */
 }
 
@@ -514,6 +504,7 @@ nav {
 
 .subscribe-text p{
   margin: 50px 0;
+  padding: 0 2%;
 }
 
 .subscribe hr{
@@ -663,4 +654,18 @@ footer ul:last-child li:first-child{
     position: static;
     margin: 20px 0;
   }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.nav-active {
+  transform: translateX(0%);
 }
