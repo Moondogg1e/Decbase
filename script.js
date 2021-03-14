@@ -6,8 +6,8 @@ const navLinks = document.querySelectorAll('.nav-links li');
 burger.addEventListener('click', () => {
     burger.classList.toggle('toggle');
 
-
     nav.classList.toggle('nav-active');
+
 
     //Animate links
     navLinks.forEach((link, index) => {
